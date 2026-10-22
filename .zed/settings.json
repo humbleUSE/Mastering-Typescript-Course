@@ -1,0 +1,67 @@
+{
+	"terminal": {
+		"shell": {
+			"program": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+		}
+	},
+	"prettier": {
+		"allowed": false
+	},
+	"semantic_tokens": "combined",
+	"inlay_hints": {
+		"enabled": false,
+		"show_type_hints": true,
+		"show_parameter_hints": true,
+		"show_background": true
+	},
+	"languages": {
+		"JavaScript": {
+			"language_servers": ["vtsls", "biome"],
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			}
+		},
+		"TypeScript": {
+			"language_servers": ["!typescript-ls", "vtsls", "biome", "codebook"],
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			}
+		},
+		"TSX": {
+			"language_servers": ["!typescript-ls", "vtsls", "biome", "codebook"],
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			}
+		},
+
+		"JSON": {
+			"language_servers": ["biome", "!typescript-ls", "!vtsls", "!codebook"],
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			}
+		}
+	},
+	"lsp": {
+		"biome": {
+			"settings": {
+				"require_config_file": true
+			}
+		},
+		"deno": {
+			"settings": {
+				"deno": {
+					"enable": true
+				}
+			}
+		}
+	},
+	"format_on_save": "on"
+}

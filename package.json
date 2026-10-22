@@ -1,0 +1,20 @@
+{
+	"devDependencies": {
+		"@biomejs/biome": "2.5.15",
+		"@types/bun": "latest"
+	},
+	"name": "zed",
+	"peerDependencies": {
+		"typescript": "^7.0.2"
+	},
+	"private": true,
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"dev2": "bun run dist/index.js",
+		"preview": "bun run  --watch index.ts",
+		"preview2": "bun run --check --watch index.ts",
+		"start": "bun run --watch dist/index.js"
+	},
+	"type": "module"
+}
